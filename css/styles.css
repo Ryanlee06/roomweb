@@ -1,0 +1,24 @@
+/* 确保页面充满整个屏幕 */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* 使用 flexbox 布局，确保页面内容和页脚适配 */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 主内容区域，确保它占据剩余空间 */
+.main-content {
+    flex-grow: 1;  /* 使主内容区域占据剩余空间 */
+}
+
+/* 页脚设置样式 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
