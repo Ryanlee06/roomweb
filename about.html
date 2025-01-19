@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>房屋整改 - 关于我们 / House Renovation - About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <!-- 导航栏（同首页） -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">房屋整改</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html" data-lang="zh">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html" data-lang="en">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html" data-lang="zh">关于我们</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html" data-lang="en">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html" data-lang="zh">服务项目</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html" data-lang="en">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html" data-lang="zh">案例展示</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html" data-lang="en">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="testimonials.html" data-lang="zh">客户评价</a></li>
+                        <li class="nav-item"><a class="nav-link" href="testimonials.html" data-lang="en">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html" data-lang="zh">联系我们</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html" data-lang="en">Contact Us</a></li>
+                    </ul>
+                    <!-- 语言切换按钮 -->
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <button class="btn btn-outline-light btn-sm me-2" id="btn-zh">中文</button>
+                            <button class="btn btn-outline-light btn-sm" id="btn-en">EN</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 关于我们内容 -->
+        <section class="container my-5">
+            <h2 class="text-center" data-lang="zh">关于我们</h2>
+            <p class="lead text-center" data-lang="zh">致力于为客户提供高质量的房屋整改服务。</p>
+            <h2 class="text-center" data-lang="en" style="display: none;">About Us</h2>
+            <p class="lead text-center" data-lang="en" style="display: none;">Committed to providing high-quality house renovation services to our clients.</p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <img src="images/team.jpg" class="img-fluid" alt="我们的团队">
+                </div>
+                <div class="col-md-6">
+                    <h4 data-lang="zh">我们的使命</h4>
+                    <p data-lang="zh">通过专业的服务和高质量的材料，帮助客户实现理想的居住空间。</p>
+                    <h4 data-lang="en" style="display: none;">Our Mission</h4>
+                    <p data-lang="en" style="display: none;">To help clients achieve their ideal living spaces through professional services and high-quality materials.</p>
+                    <h4 data-lang="zh">我们的愿景</h4>
+                    <p data-lang="zh">成为行业内最受信赖的房屋整改公司，持续创新，不断提升服务质量。</p>
+                    <h4 data-lang="en" style="display: none;">Our Vision</h4>
+                    <p data-lang="en" style="display: none;">To become the most trusted house renovation company in the industry, continuously innovating and enhancing service quality.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚（同首页） -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p data-lang="zh">&copy; 2025 房屋整改公司. 版权所有.</p>
+            <p data-lang="en" style="display: none;">&copy; 2025 House Renovation Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS 和依赖项 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 自定义JS -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
