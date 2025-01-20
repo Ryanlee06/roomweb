@@ -1,4 +1,3 @@
-
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -51,11 +50,11 @@
         <div class="row mt-4">
             <!-- 图片1 -->
             <div class="col-md-6">
-                <img src="images/image1.jpg" alt="浴室改造图片1" class="img-fluid mb-4">
+                <img src="images/image1.jpg" alt="阁楼改造图片1" class="img-fluid mb-4">
             </div>
             <!-- 图片2 -->
             <div class="col-md-6">
-                <img src="images/image2.jpg" alt="浴室改造图片2" class="img-fluid mb-4">
+                <img src="images/image2.jpg" alt="阁楼改造图片2" class="img-fluid mb-4">
             </div>
             <!-- 视频 -->
             <div class="col-md-12">
@@ -66,8 +65,8 @@
             </div>
         </div>
 
-        <p data-lang="zh">详细描述：本项目包括浴室的全面翻新，从墙壁到地板的更换，配备了最新的现代化浴室设施，确保客户在使用时有更好的体验。</p>
-        <p data-lang="en" style="display: none;">Detailed Description: This project includes a full renovation of the bathroom, replacing walls and floors, and equipping it with the latest modern bathroom facilities to ensure a better user experience.</p>
+        <p data-lang="zh">详细描述：本项目包括阁楼的全面改造，从地板到屋顶的更换，配备了最新的现代化设施，确保客户在使用时有更好的体验。</p>
+        <p data-lang="en" style="display: none;">Detailed Description: This project includes a full renovation of the attic, replacing floors and ceilings, and equipping it with the latest modern facilities to ensure a better user experience.</p>
     </div>
 
     <!-- 页脚 -->
@@ -92,7 +91,27 @@
             elementsEn.forEach(function(el) {
                 el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'block' : 'none';
             });
+
+            // 更新按钮文本
+            if (elementsZh[0].style.display === 'none') {
+                document.getElementById('switchLangBtn').innerText = '切换语言 / Switch Language';
+            } else {
+                document.getElementById('switchLangBtn').innerText = 'Switch Language / 切换语言';
+            }
         });
+
+        // 初始加载时显示中文内容
+        window.onload = function() {
+            const elementsZh = document.querySelectorAll('[data-lang="zh"]');
+            const elementsEn = document.querySelectorAll('[data-lang="en"]');
+
+            elementsZh.forEach(function(el) {
+                el.style.display = 'block';  // 初始显示中文
+            });
+            elementsEn.forEach(function(el) {
+                el.style.display = 'none';   // 初始隐藏英文
+            });
+        };
     </script>
 </body>
 </html>
