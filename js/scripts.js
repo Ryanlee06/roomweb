@@ -1,5 +1,3 @@
-// 自定义JavaScript
-
 document.addEventListener('DOMContentLoaded', function() {
     const btnZh = document.getElementById('btn-zh');
     const btnEn = document.getElementById('btn-en');
